@@ -1,6 +1,6 @@
 {
   "name": "@iazlabs/ngx-config",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "peerDependencies": {
     "@angular/common": "^12.0.0 || ^13.0.0",
     "@angular/core": "^12.0.0 || ^13.0.0",
