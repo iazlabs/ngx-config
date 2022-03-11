@@ -3,5 +3,37 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-  }
+    "@iazlabs/ngx-config": {
+      "projectType": "library",
+      "root": "projects/ngx-config",
+      "sourceRoot": "projects/ngx-config/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/ngx-config/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ngx-config/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/ngx-config/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-config/src/test.ts",
+            "tsConfig": "projects/ngx-config/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-config/karma.conf.js"
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "ngx-config"
 }
