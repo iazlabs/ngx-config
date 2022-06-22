@@ -6,7 +6,7 @@ name: ngx-config package deployment on github packages
 on:
   push:
     branches:
-      - master
+      - ng-v13
 
 jobs:
   publish-gpr:
@@ -32,6 +32,6 @@ jobs:
       - name: Build
         run: npm run build @azlabsjs/ngx-config
 
-      - run: cd dist/ngx-config && npm publish
+      - run: cd dist/ngx-config && npm publish --access public
     env:
       NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
