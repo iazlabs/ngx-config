@@ -12,8 +12,7 @@
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
     "paths": {
-      "@iazlabs/ngx-config": [
-        "dist/ngx-config/ngx-config",
+      "@azlabsjs/ngx-config": [
         "dist/ngx-config"
       ]
     },

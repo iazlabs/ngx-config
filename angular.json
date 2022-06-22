@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "@iazlabs/ngx-config": {
+    "@azlabsjs/ngx-config": {
       "projectType": "library",
       "root": "projects/ngx-config",
       "sourceRoot": "projects/ngx-config/src",
